@@ -88,6 +88,7 @@
             <param name="toSplit">String to split into words</param>
             <param name="endOfWordToken"></param>
             <returns></returns>
+            <remarks>vv2.0.0.11 Strips string before splitting into words</remarks>
         </member>
         <member name="M:CSHARP.Text.StringHelper.SplitStringIntoLines(System.String)">
             <summary>

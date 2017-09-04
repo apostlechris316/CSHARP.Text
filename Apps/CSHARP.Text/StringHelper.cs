@@ -165,19 +165,22 @@ namespace CSHARP.Text
 	    /// <param name="toSplit">String to split into words</param>
 	    /// <param name="endOfWordToken"></param>
 	    /// <returns></returns>
+        /// <remarks>vv2.0.0.11 Strips string before splitting into words</remarks>
 	    public static List<string> SplitStringIntoWords(string toSplit, char[] endOfWordToken)
 	    {
             var words = new List<string>();
-	        var splitBuffer = toSplit;
+	        var splitBuffer = toSplit.Trim();
 
             while (string.IsNullOrEmpty(splitBuffer) == false)
 	        {
 	            string foundWord = GetBeforeOneOf(splitBuffer, endOfWordToken, "EXCLUDING");
-	            words.Add(foundWord);
+
+                // only add word if not empty string.
+                if (string.IsNullOrEmpty(foundWord) == false) words.Add(foundWord);
 
 	            splitBuffer = (foundWord == splitBuffer)
 	                ? string.Empty
-	                : GetAfterOneOf(splitBuffer, endOfWordToken, "EXCLUDING");
+	                : GetAfterOneOf(splitBuffer, endOfWordToken, "EXCLUDING").Trim();
 	        }
 
 	        return words;
