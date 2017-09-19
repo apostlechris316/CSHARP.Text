@@ -1,2 +1,21 @@
 Date Completed,Version,Library,Feature,Task
 9/17/2017,v2.0.0.11,CSHARP.Text,IsAlphaNumericOrUnderscoreOrDotOrComma,This function was added to validate strings that are alpha numberic but also allow periods and commas
+,2.0.0.2,CSHARP.Text,Fixed case of Base64Encode method,
+,2.0.0.8,CSHARP.Text,ConvertToUrlFriendly,This function was added to encode urls into friendly urls
+,2.0.0.10,CSHARP.Text,ConvertToUrlFriendly,Spaces were being replaced with empty string rather than replaceUnfriendlyWith
+,2.0.0.2,CSHARP.Text,ConvertToCsv,Case Corrected in method name
+,2.0.0.11,CSHARP.Text,SplitStringIntoWords,Strips string before splitting into words
+,2.0.0.3,CSHARP.Text,SplitStringToDictionary,This function was added to split string into dictionary 
+,2.0.0.5,CSHARP.Text,SplitStringToDistinctDictionary,This function was added to split string into dictionary but only add unique words
+,2.0.0.2,CSHARP.Text,SplitStringToDictionaryOnEndOfLine,Exception on Line with key and no value
+,2.0.0.6,CSHARP.Text,SplitStringOnEndOfLineDistinct,This function was added to split string on end of line but only add unique strings
+,2.0.0.6,CSHARP.Text,StringArrayToDistinctDelimitedString,New function
+,2.0.0.7,CSHARP.Text,StringListToEndOfLineDelimited,New function
+,2.0.0.10,CSHARP.Text,DelimitedStringToGuidList,Returns null if null passed in
+,2.0.0.10,CSHARP.Text,DelimitedStringToStringArray,Returns null if null passed in
+,2.0.0.10,CSHARP.Text,DelimitedStringToStringList,Returns null if null passed in
+,2.0.0.10,CSHARP.Text,DelimitedStringToEndOfLineDelimited,Returns null if null passed in
+,2.0.0.9,CSHARP.Text,GetAfterOneOf,New function
+,2.0.0.9,CSHARP.Text,GetBeforeOneOf,New function
+,2.0.0.4,CSHARP.Text,GetBetween,Including was missing before token
+,2.0.0.4,CSHARP.Text,GetBetweenPositions,Including was missing before token
