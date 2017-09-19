@@ -1,0 +1,2 @@
+Date Completed,Version,Library,Feature,Task
+9/17/2017,v2.0.0.11,CSHARP.Text,IsAlphaNumericOrUnderscoreOrDotOrComma,This function was added to validate strings that are alpha numberic but also allow periods and commas

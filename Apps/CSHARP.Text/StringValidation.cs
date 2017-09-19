@@ -118,6 +118,11 @@ namespace CSHARP.Text
         public const string AlphaNumericOrUnderscoreRegex = "^[a-zA-Z0-9_]*$";
 
         /// <summary>
+        /// Alpha Numeric or Underscore or Dot or comma
+        /// </summary>
+        public const string AlphaNumericOrUnderscoreOrDotOrCommaRegex = "^[a-zA-Z0-9_.,]*$";
+
+        /// <summary>
         /// Regular Expression used to validate email addresses
         /// </summary>
         public const string EmailRegex = @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*";
@@ -354,6 +359,18 @@ namespace CSHARP.Text
         public static bool IsAlphaNumericOrUnderscore(String text)
         {
             var objAlphaNumericPattern = new Regex(AlphaNumericOrUnderscoreRegex);
+            return (SAFE_TEXT(text) == text) && !objAlphaNumericPattern.IsMatch(text);
+        }
+
+        /// <summary>
+        /// Checks if string passed in is a valid AlphaNumeric (may contain underscore, period or comma)
+        /// </summary>
+        /// <param name="text">string containing number to validate</param>
+        /// <returns></returns>
+        /// <remarks>NEW in v2.0.0.11</remarks>
+        public static bool IsAlphaNumericOrUnderscoreOrDotOrComma(String text)
+        {
+            var objAlphaNumericPattern = new Regex(AlphaNumericOrUnderscoreOrDotOrCommaRegex);
             return (SAFE_TEXT(text) == text) && !objAlphaNumericPattern.IsMatch(text);
         }
 
