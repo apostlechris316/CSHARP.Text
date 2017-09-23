@@ -108,9 +108,21 @@ namespace CSHARP.Text
         public const string AlphaRegex = "[^a-zA-Z]";
 
         /// <summary>
+        /// Regular Expression used to validate strings with alphabet characters only
+        /// </summary>
+        /// <remarks>NEW in v.2.0.0.12</remarks>
+        public const string AlphaRegexAllowSpace = "[^a-zA-Z] ";
+
+        /// <summary>
         /// Regular Expression used to validate string with alphabet and numeric characters
         /// </summary>
         public const string AlphaNumericRegex = "[^a-zA-Z0-9]";
+
+        /// <summary>
+        /// Regular Expression used to validate string with alphabet and numeric characters
+        /// </summary>
+        /// <remarks>NEW in v.2.0.0.12</remarks>
+        public const string AlphaNumericRegexAllowSpace = "[^a-zA-Z0-9 ]";
 
         /// <summary>
         /// 
@@ -118,9 +130,21 @@ namespace CSHARP.Text
         public const string AlphaNumericOrUnderscoreRegex = "^[a-zA-Z0-9_]*$";
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>NEW in v.2.0.0.12</remarks>
+        public const string AlphaNumericOrUnderscoreRegexAllowSpace = "^[a-zA-Z0-9_ ]*$";
+
+        /// <summary>
         /// Alpha Numeric or Underscore or Dot or comma
         /// </summary>
         public const string AlphaNumericOrUnderscoreOrDotOrCommaRegex = "^[a-zA-Z0-9_.,]*$";
+
+        /// <summary>
+        /// Alpha Numeric or Underscore or Dot or comma
+        /// </summary>
+        /// <remarks>NEW in v.2.0.0.12</remarks>
+        public const string AlphaNumericOrUnderscoreOrDotOrCommaAllowSpaceRegex = "^[a-zA-Z0-9_., ]*$";
 
         /// <summary>
         /// Regular Expression used to validate email addresses
@@ -336,7 +360,18 @@ namespace CSHARP.Text
         /// <returns></returns>
         public static bool IsAlpha(String text)
         {
-            var objAlphaPattern = new Regex(AlphaRegex);
+            return IsAlpha(text, false);
+        }
+
+        /// <summary>
+        /// Checks if string passed in is a valid Alphabets
+        /// </summary>
+        /// <param name="text">string containing number to validate</param>
+        /// <returns></returns>
+        /// <remarks>v.2.0.0.12 now supports allowing spaces</remarks>
+        public static bool IsAlpha(String text, bool allowSpace)
+        {
+            var objAlphaPattern = new Regex(allowSpace == true ? AlphaRegexAllowSpace : AlphaRegex);
             return (SAFE_TEXT(text) == text) && !objAlphaPattern.IsMatch(text);
         }
 
@@ -347,7 +382,19 @@ namespace CSHARP.Text
         /// <returns></returns>
         public static bool IsAlphaNumeric(String text)
         {
-            var objAlphaNumericPattern = new Regex(AlphaNumericRegex);
+            return IsAlphaNumeric(text, false);
+        }
+
+        /// <summary>
+        /// Checks if string passed in is a valid AlphaNumeric
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="allowSpace"></param>
+        /// <returns></returns>
+        /// <remarks>v.2.0.0.12 now supports allowing spaces</remarks>
+        public static bool IsAlphaNumeric(String text, bool allowSpace)
+        { 
+            var objAlphaNumericPattern = new Regex(allowSpace == true ? AlphaNumericRegexAllowSpace : AlphaNumericRegex);
             return (SAFE_TEXT(text) == text) && !objAlphaNumericPattern.IsMatch(text);
         }
 
@@ -370,7 +417,19 @@ namespace CSHARP.Text
         /// <remarks>NEW in v2.0.0.11</remarks>
         public static bool IsAlphaNumericOrUnderscoreOrDotOrComma(String text)
         {
-            var objAlphaNumericPattern = new Regex(AlphaNumericOrUnderscoreOrDotOrCommaRegex);
+            return IsAlphaNumericOrUnderscoreOrDotOrComma(text, false);
+        }
+
+        /// <summary>
+        /// Checks if string passed in is a valid AlphaNumeric (may contain underscore, period or comma)
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="allowSpace"></param>
+        /// <returns></returns>
+        /// <remarks>v.2.0.0.12 now supports allowing spaces</remarks>
+        public static bool IsAlphaNumericOrUnderscoreOrDotOrComma(String text, bool allowSpace)
+        { 
+            var objAlphaNumericPattern = new Regex(allowSpace == true ? AlphaNumericOrUnderscoreRegexAllowSpace : AlphaNumericOrUnderscoreOrDotOrCommaRegex);
             return (SAFE_TEXT(text) == text) && !objAlphaNumericPattern.IsMatch(text);
         }
 
