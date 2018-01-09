@@ -88,7 +88,7 @@
             <param name="toSplit">String to split into words</param>
             <param name="endOfWordToken"></param>
             <returns></returns>
-            <remarks>vv2.0.0.11 Strips string before splitting into words</remarks>
+            <remarks>v2.0.0.11 Strips string before splitting into words</remarks>
         </member>
         <member name="M:CSHARP.Text.StringHelper.SplitStringIntoLines(System.String)">
             <summary>
@@ -616,15 +616,74 @@
             Regular Expression used to validate strings with alphabet characters only
             </summary>
         </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaRegexAllowSpace">
+            <summary>
+            Regular Expression used to validate strings with alphabet characters only
+            </summary>
+            <remarks>NEW in v.2.0.0.12</remarks>
+        </member>
         <member name="F:CSHARP.Text.StringValidation.AlphaNumericRegex">
             <summary>
             Regular Expression used to validate string with alphabet and numeric characters
             </summary>
         </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericRegexAllowSpace">
+            <summary>
+            Regular Expression used to validate string with alphabet and numeric characters
+            </summary>
+            <remarks>NEW in v.2.0.0.12</remarks>
+        </member>
         <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrUnderscoreRegex">
             <summary>
             
             </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrUnderscoreRegexAllowSpace">
+            <summary>
+            
+            </summary>
+            <remarks>NEW in v.2.0.0.12</remarks>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrDashRegex">
+            <summary>
+            Regular Expression used to validate string with alphabet and numeric and dash
+            </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrDashRegexAllowSpace">
+            <summary>
+            Regular Expression used to validate string with alphabet and numberc and dash and space
+            </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrDotRegex">
+            <summary>
+            Regular Expression used to validate string with alphabet and numberc and dot
+            </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrDotRegexAllowSpace">
+            <summary>
+            Regular Expression used to validate string with alphabet and numberc and dot and space
+            </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrDotOrDashRegex">
+            <summary>
+            Regular Expression used to validate string with alphabet and numeric and dot and dash
+            </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrDotOrDashRegexAllowSpace">
+            <summary>
+            Regular Expression used to validate string with alphabet and numeric and dot and dash and space
+            </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrUnderscoreOrDotOrDashOrCommaRegex">
+            <summary>
+            Alpha Numeric or Underscore or Dot or comma
+            </summary>
+        </member>
+        <member name="F:CSHARP.Text.StringValidation.AlphaNumericOrUnderscoreOrDotOrDashOrCommaAllowSpaceRegex">
+            <summary>
+            Alpha Numeric or Underscore or Dot or comma
+            </summary>
+            <remarks>NEW in v.2.0.0.12</remarks>
         </member>
         <member name="F:CSHARP.Text.StringValidation.EmailRegex">
             <summary>
@@ -772,11 +831,45 @@
             <param name="text">string containing number to validate</param>
             <returns></returns>
         </member>
+        <member name="M:CSHARP.Text.StringValidation.IsAlpha(System.String,System.Boolean)">
+            <summary>
+            Checks if string passed in is a valid Alphabets
+            </summary>
+            <param name="text">string containing number to validate</param>
+            <param name="allowSpace"></param>
+            <returns></returns>
+            <remarks>v.2.0.0.12 now supports allowing spaces</remarks>
+        </member>
         <member name="M:CSHARP.Text.StringValidation.IsAlphaNumeric(System.String)">
             <summary>
             Checks if string passed in is a valid AlphaNumeric
             </summary>
             <param name="text">string containing number to validate</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSHARP.Text.StringValidation.IsAlphaNumeric(System.String,System.Boolean)">
+            <summary>
+            Checks if string passed in is a valid AlphaNumeric
+            </summary>
+            <param name="text"></param>
+            <param name="allowSpace"></param>
+            <returns></returns>
+            <remarks>v.2.0.0.12 now supports allowing spaces</remarks>
+        </member>
+        <member name="M:CSHARP.Text.StringValidation.IsAlphaNumericOrDash(System.String,System.Boolean)">
+            <summary>
+            Checks if string passed in is a valid alphanumeric or a dash
+            </summary>
+            <param name="text"></param>
+            <param name="allowSpace"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSHARP.Text.StringValidation.IsAlphaNumericOrDot(System.String,System.Boolean)">
+            <summary>
+            Checks if string passed in is a valid Alphanumeric (may contain period or space)
+            </summary>
+            <param name="text"></param>
+            <param name="allowSpace"></param>
             <returns></returns>
         </member>
         <member name="M:CSHARP.Text.StringValidation.IsAlphaNumericOrUnderscore(System.String)">
@@ -785,6 +878,23 @@
             </summary>
             <param name="text">string containing number to validate</param>
             <returns></returns>
+        </member>
+        <member name="M:CSHARP.Text.StringValidation.IsAlphaNumericOrUnderscoreOrDotOrDashOrComma(System.String)">
+            <summary>
+            Checks if string passed in is a valid AlphaNumeric (may contain underscore, period or comma)
+            </summary>
+            <param name="text">string containing number to validate</param>
+            <returns></returns>
+            <remarks>NEW in v2.0.0.11</remarks>
+        </member>
+        <member name="M:CSHARP.Text.StringValidation.IsAlphaNumericOrUnderscoreOrDotOrDashOrComma(System.String,System.Boolean)">
+            <summary>
+            Checks if string passed in is a valid AlphaNumeric (may contain underscore, period or comma)
+            </summary>
+            <param name="text"></param>
+            <param name="allowSpace"></param>
+            <returns></returns>
+            <remarks>v.2.0.0.12 now supports allowing spaces</remarks>
         </member>
         <member name="T:CSHARP.Text.Utf8StringWriter">
             <summary>

@@ -54,3 +54,11 @@ C:\_rwc\_git\CSHARP.Text\Apps\CSHARP.Text\bin\Debug\CSHARP.Text.dll.lastcodeanal
 C:\_rwc\_git\CSHARP.Text\Apps\CSHARP.Text\obj\Debug\CSHARP.Text.csprojResolveAssemblyReference.cache
 C:\_rwc\_git\CSHARP.Text\Apps\CSHARP.Text\obj\Debug\CSHARP.Text.dll
 C:\_rwc\_git\CSHARP.Text\Apps\CSHARP.Text\obj\Debug\CSHARP.Text.pdb
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\bin\Debug\CSHARP.Text.XML
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\bin\Debug\CSHARP.Text.dll
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\bin\Debug\CSHARP.Text.pdb
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\bin\Debug\CSHARP.Text.dll.CodeAnalysisLog.xml
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\bin\Debug\CSHARP.Text.dll.lastcodeanalysissucceeded
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\obj\Debug\CSHARP.Text.csproj.CoreCompileInputs.cache
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\obj\Debug\CSHARP.Text.dll
+C:\_git\CSHARP.Text\Apps\CSHARP.Text\obj\Debug\CSHARP.Text.pdb
