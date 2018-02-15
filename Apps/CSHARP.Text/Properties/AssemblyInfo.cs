@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Read Watch Create")]
 [assembly: AssemblyProduct("CSHARP.Text")]
-[assembly: AssemblyCopyright("Copyright ©2007-2015 Read Watch Create")]
+[assembly: AssemblyCopyright("Copyright ©2007-2018 Read Watch Create")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.0.0.12")]
-[assembly: AssemblyFileVersion("2.0.0.12")]
+[assembly: AssemblyVersion("2.0.0.15")]
+[assembly: AssemblyFileVersion("2.0.0.15")]
