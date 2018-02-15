@@ -10,11 +10,12 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace CSHARP.Text
+namespace CSHARPStandard.Text
 {
     /// <summary>
     /// Functions to assist in validating strings
     /// </summary>
+    /// <remarks>Converted to Non-Static in .NET Standard Library to support greater compatability with other tools like Powershell</remarks>
     public class StringValidation
     {
         /// <summary>

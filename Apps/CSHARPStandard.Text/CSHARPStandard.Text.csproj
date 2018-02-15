@@ -1,16 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>2.0.0.12</Version>
+    <Version>2.0.0.15</Version>
     <Description>This QuickStart assists in manipulating and validating text strings</Description>
-    <Copyright>Copyright ©2007-2015 Read Watch Create</Copyright>
+    <Copyright>Copyright ©2007-2018 Read Watch Create</Copyright>
     <RepositoryUrl>https://github.com/sitecoreguild/CSHARP.Text</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>.NET Standard LIbrary, Text Manipulation</PackageTags>
-    <PackageReleaseNotes>This version of the library was ported from the v2.0.0.12 of the .NET Framework Library with changes necessary to be a .NET Standard LIbrary. If you have questions email me chris.williams@readwatchcreate.com</PackageReleaseNotes>
+    <PackageReleaseNotes>This version of the library was ported from the v2.0.0.12 of the .NET Framework Library with changes necessary to be a .NET Standard LIbrary. It was also changed to contain non-static classes for additional compatability with tools. If you have questions email me chris.williams@readwatchcreate.com
+
+v2.0.0.15 - This version was changed to support .NET Standard 1.0. In doing so some code was migrated to separate dlls.</PackageReleaseNotes>
     <Authors>Chris WIlliams</Authors>
     <Company>Read Watch Create</Company>
     <Product>CSHARP Standard Library QuickStarts</Product>

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CSHARPStandard.Text" Version="2.0.0.12" />
+    <PackageReference Include="CSHARPStandard.Text" Version="2.0.0.13" />
   </ItemGroup>
 
 </Project>

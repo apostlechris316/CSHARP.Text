@@ -88,7 +88,10 @@ namespace UnitTestTextLibraryDotNetCoreConsole
         /// <returns></returns>
         public static bool POSITIVE_TEST_ConvertToAlplaNumeric(string failMessage, string expectedResult, string toConvert, bool removeWhiteSpace)
         {
-            var result = StringHelper.ConvertToAlphaNumeric(toConvert, false);
+            // Declare helper classes
+            var stringHelper = new StringHelper();
+
+            var result = stringHelper.ConvertToAlphaNumeric(toConvert, false);
             if (result != expectedResult)
             {
                 Console.WriteLine(string.Format("******* ERROR: {0} - Test Failed converting({1}) expected({2}). Result was({3}) *******", failMessage, toConvert, expectedResult, result));
@@ -110,7 +113,10 @@ namespace UnitTestTextLibraryDotNetCoreConsole
         /// <returns></returns>
         public static bool POSITIVE_TEST_ConvertToAlplaNumeric(string failMessage, string expectedResult, string toConvert, bool removeWhiteSpace, bool removeUnderScore)
         {
-            var result = StringHelper.ConvertToAlphaNumeric(toConvert, removeWhiteSpace, removeUnderScore);
+            // Declare helper classes
+            var stringHelper = new StringHelper();
+
+            var result = stringHelper.ConvertToAlphaNumeric(toConvert, removeWhiteSpace, removeUnderScore);
             if (result != expectedResult)
             {
                 Console.WriteLine(string.Format("******* ERROR: {0} - Test Failed converting({1}) expected({2}). Result was({3}) *******", failMessage, toConvert, expectedResult, result));
