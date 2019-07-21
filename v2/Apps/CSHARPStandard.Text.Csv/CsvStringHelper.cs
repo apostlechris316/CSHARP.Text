@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
-using System.Text;
-
-namespace CSHARPStandard.Text.Csv
+﻿namespace CSHARPStandard.Text.Csv
 {
+    using System;
+    using System.Collections;
+    using System.Linq;
+    using System.Text;
+
     /// <summary>
     /// Assists in working with CSV
     /// </summary>
