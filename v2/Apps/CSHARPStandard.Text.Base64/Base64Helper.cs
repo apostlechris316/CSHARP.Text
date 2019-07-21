@@ -7,11 +7,11 @@
  *          chris.williams@readwatchcreate.com
  ********************************************************************************/
 
-using System;
-using System.Text;
-
 namespace CSHARPStandard.Text
 {
+    using System;
+    using System.Text;
+
     /// <summary>
     /// Assists in encoding and decoding to and from base 64
     /// </summary>

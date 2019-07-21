@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CSHARP.Text")]
-[assembly: AssemblyDescription("This QuickStart assists in manipulating and validating text strings")]
+[assembly: AssemblyDescription("This QuickStart assists in manipulating and validating text strings. This version is for use with .NET Framework.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Read Watch Create")]
 [assembly: AssemblyProduct("CSHARP.Text")]
